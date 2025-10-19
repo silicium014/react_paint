@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #2c3e50;
+  color: white;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  background: #34495e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tool-button {
+  background: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.tool-button:hover {
+  background: #2980b9;
+}
+
+.tool-button.active {
+  background: #e74c3c;
+}
+
+.color-picker {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.active {
+  border-color: white;
+  transform: scale(1.2);
+}
+
+.brush-size {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.size-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.size-option.active {
+  border-color: #3498db;
+}
+
+.size-option.small {
+  width: 15px;
+  height: 15px;
+}
+
+.size-option.medium {
+  width: 20px;
+  height: 20px;
+}
+
+.size-option.large {
+  width: 25px;
+  height: 25px;
+}
+
+.canvas-container {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+canvas {
+  display: block;
+  cursor: crosshair;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.controls button:hover {
+  background: #c0392b;
+}
